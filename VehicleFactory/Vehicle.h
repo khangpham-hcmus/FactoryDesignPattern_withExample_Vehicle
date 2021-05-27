@@ -20,4 +20,9 @@ protected:
 	static void addVehicle(Vehicle* objectVehicle);
 public:
 	static Vehicle* createVehicle(char cTypeOfProduct, char cLocation);
+public:
+	//virtual destructor method:
+	virtual ~Vehicle(){
+
+	}
 };

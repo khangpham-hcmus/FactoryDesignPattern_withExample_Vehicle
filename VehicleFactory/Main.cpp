@@ -8,6 +8,7 @@ int main() {
 	Sea sea2("sea", "sea_vehicle", "04", "BUSY");
 	Train train1("train", "train_vehicle", "05", "FREE");
 	Train train02("train", "train_vehicle", "06", "BUSY");
+	//Input data for create Vehicles:
 	char cTypeOfProduct, cLocation;
 	cout << "Input type of product: ";
 	cin >> cTypeOfProduct;
@@ -16,9 +17,13 @@ int main() {
 	cout << "=========================================================" << endl;
 	Vehicle* vhc = Vehicle::createVehicle(cTypeOfProduct, cLocation);
 	if (vhc != nullptr)
-		cout << "The suitable vehicle is: " << vhc->className() <<"."<< endl;
+	{
+		cout << "The suitable vehicle is: " << vhc->className() << "." << endl;
+		delete vhc;
+	}
 	else
 		cout << "There is no suitable vehicle for transport.\n";
+	
 	
 	return 0;
 }

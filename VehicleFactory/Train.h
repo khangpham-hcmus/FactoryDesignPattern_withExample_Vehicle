@@ -21,7 +21,7 @@ public:
 		addVehicle(this);
 	}
 	Train(Train& other)
-	{
+	{	//copy constructor:
 		this->VehicleCode = other.VehicleCode;
 		this->Type = other.Type;
 		this->Id = other.Id;

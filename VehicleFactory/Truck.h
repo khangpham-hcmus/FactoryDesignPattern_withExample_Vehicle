@@ -20,7 +20,7 @@ public:
 		this->Status = _status_;
 		addVehicle(this);
 	}
-	Truck(Truck& other)
+	Truck(Truck& other)//copy constructor:
 	{
 		this->VehicleCode = other.VehicleCode;
 		this->Type = other.Type;
