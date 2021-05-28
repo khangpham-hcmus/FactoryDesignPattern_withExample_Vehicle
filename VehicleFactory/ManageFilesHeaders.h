@@ -3,6 +3,7 @@
 #include"Sea.h"
 #include"Train.h"
 #include"Truck.h"
+#include"VehicleFactory.h"
 class Menu {
 public:
 	static void Show() {
